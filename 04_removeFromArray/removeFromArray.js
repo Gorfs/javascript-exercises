@@ -1,8 +1,8 @@
 const removeFromArray = function (arr, num) {
+  let result = []
   for (i = 0; i < arr.length; i++) {
-    let result = []
     if (arr[i] != num) {
-      result = result + arr[i]
+      result.push(arr[i])
     }
   }
   return result

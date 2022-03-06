@@ -23,3 +23,21 @@ container.appendChild(header_3)
 div.appendChild(header_1)
 div.appendChild(text_2)
 container.appendChild(div)
+
+function alertfunction() {
+  alert("Yay I did it")
+}
+
+const button = document.querySelector("#button")
+
+button.addEventListener("click", function (e) {
+  e.target.style.background = "blue"
+})
+
+const buttons = document.querySelectorAll("button")
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id)
+  })
+})
